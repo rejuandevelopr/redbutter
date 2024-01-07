@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .b-table {
+            max-width: 756px;
+            width: 100%;
+            border-collapse: separate;
+            margin: 20px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid #dddddd;
+            border-spacing: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow-x: auto;
+        }
+        .b-table td,
+        .b-table th {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border: 1px solid #cacaca;
+            font-size: 18px !important;
+            text-align: start;
+            vertical-align: middle;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        .b-table th {
+            background-color: #17224d; /* #6bd3ff */
+            text-align: center;
+            border-left: 0 !important;
+            border-right: 0 !important;
+        }
+        .b-table th {
+            color: #fff;
+        }
+        .b-table td {
+            color: #17224d;
+            text-align: center;
+            height: 50px !important;
+        }
+        .b-table tr:nth-child(even) td {
+            background: #ececec !important;
+        }
+        .b-table tr:first-child th:first-child {
+            border-top-left-radius: 10px;
+        }
+        .b-table tr:first-child th:last-child {
+            border-top-right-radius: 10px;
+        }
+        .b-table tr:first-child th:nth-child(2),
+        .b-table tr:first-child th:nth-child(3),
+        .b-table tr:first-child th:nth-child(4) {
+            min-width: 30px;
+        }
+
+        @media screen and (max-width:768px) {
+            .b-table td,
+            .b-table th {
+            font-size: 13px;
+            }
+            .b-table td svg,
+            .b-table th svg {
+               height: 18px;
+               width: 18px;
+            }
+        }
+        @media screen and (max-width:360px) {
+            .b-table td,
+            .b-table th {
+            font-size: 12px;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+   
+   <div style="overflow-x: auto;">
+
+    <table class="b-table">
+        <tr>
+            <th style="border-left: 1px solid #cacaca;"></th>
+            <th>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M10.843 25.284A1.345 1.345 0 0 0 9.5 26.627v10.746a1.343 1.343 0 0 0 2.687 0V26.627a1.345 1.345 0 0 0-1.344-1.343ZM15.545 21.254a1.345 1.345 0 0 0-1.344 1.343v18.806a1.343 1.343 0 0 0 2.687 0V22.597a1.345 1.345 0 0 0-1.343-1.343ZM20.246 12.522a1.345 1.345 0 0 0-1.343 1.344v36.268a1.343 1.343 0 0 0 2.687 0V13.866a1.345 1.345 0 0 0-1.344-1.344ZM24.948 17.224a1.345 1.345 0 0 0-1.344 1.343v26.866a1.343 1.343 0 0 0 2.687 0V18.567a1.345 1.345 0 0 0-1.343-1.343ZM29.65 25.284a1.345 1.345 0 0 0-1.344 1.343v10.746a1.343 1.343 0 0 0 2.687 0V26.627a1.345 1.345 0 0 0-1.344-1.343ZM34.35 25.284a1.345 1.345 0 0 0-1.342 1.343v10.746a1.343 1.343 0 0 0 2.686 0V26.627a1.345 1.345 0 0 0-1.343-1.343ZM39.052 17.224a1.345 1.345 0 0 0-1.343 1.343v26.866a1.343 1.343 0 0 0 2.687 0V18.567a1.345 1.345 0 0 0-1.344-1.343ZM43.754 12.522a1.345 1.345 0 0 0-1.344 1.344v36.268a1.343 1.343 0 0 0 2.687 0V13.866a1.345 1.345 0 0 0-1.343-1.344ZM48.455 21.254a1.345 1.345 0 0 0-1.343 1.343v18.806a1.343 1.343 0 0 0 2.687 0V22.597a1.345 1.345 0 0 0-1.344-1.343ZM53.157 25.284a1.345 1.345 0 0 0-1.344 1.343v10.746a1.343 1.343 0 0 0 2.687 0V26.627a1.345 1.345 0 0 0-1.343-1.343Z" fill="#f58e12" opacity="1" data-original="#000000" class=""></path><path d="M32 2a30 30 0 1 0 30 30A30.034 30.034 0 0 0 32 2Zm0 58.291A28.291 28.291 0 1 1 60.291 32 28.323 28.323 0 0 1 32 60.291Z" fill="#f58e12" opacity="1" data-original="#000000" class=""></path></g></svg><br>
+                <span>Portiva</span>
+            </th>
+            <th>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m452.71 157.937-133.741-12.404L265.843 22.17c-3.72-8.638-15.967-8.638-19.686 0l-53.126 123.362L59.29 157.937c-9.365.868-13.149 12.516-6.084 18.723l100.908 88.646-29.531 131.029c-2.068 9.175 7.841 16.373 15.927 11.572L256 339.331l115.49 68.576c8.087 4.802 17.994-2.397 15.927-11.572l-29.532-131.029 100.909-88.646c7.065-6.207 3.28-17.855-6.084-18.723z" style="" fill="#f58e12" data-original="#ffdc64" opacity="1" class=""></path><path d="M119.278 17.923c6.818 9.47 26.062 50.14 37.064 73.842 1.73 3.726-2.945 7.092-5.93 4.269-18.987-17.952-51.452-49.104-58.27-58.575-5.395-7.493-3.694-17.941 3.8-23.336 7.493-5.395 17.941-3.693 23.336 3.8zM392.722 17.923c-6.818 9.47-26.062 50.14-37.064 73.842-1.73 3.726 2.945 7.092 5.93 4.269 18.987-17.952 51.451-49.105 58.27-58.575 5.395-7.493 3.694-17.941-3.8-23.336-7.493-5.395-17.941-3.693-23.336 3.8zM500.461 295.629c-11.094-3.618-55.689-9.595-81.612-12.875-4.075-.516-5.861 4.961-2.266 6.947 22.873 12.635 62.416 34.099 73.51 37.717 8.778 2.863 18.215-1.932 21.078-10.711 2.863-8.779-1.932-18.215-10.71-21.078zM11.539 295.629c11.094-3.618 55.689-9.595 81.612-12.875 4.075-.516 5.861 4.961 2.266 6.947-22.873 12.635-62.416 34.099-73.51 37.717-8.778 2.863-18.215-1.932-21.078-10.711s1.932-18.215 10.71-21.078zM239.794 484.31c0-11.669 8.145-55.919 13.065-81.582.773-4.034 6.534-4.034 7.307 0 4.92 25.663 13.065 69.913 13.065 81.582 0 9.233-7.485 16.718-16.718 16.718-9.234.001-16.719-7.485-16.719-16.718z" style="" fill="#f58e12" data-original="#fff082" class="" opacity="1"></path><path d="m285.161 67.03-19.319-44.86c-3.72-8.638-15.967-8.638-19.686 0L193.03 145.532 59.29 157.937c-9.365.868-13.149 12.516-6.084 18.723l100.908 88.646-29.531 131.029c-2.068 9.175 7.841 16.373 15.927 11.572l15.371-9.127c25.199-163.12 96.041-282.862 129.28-331.75z" style="" fill="#f58e12" data-original="#ffc850" class="" opacity="1"></path></g></svg><br>
+                <span>Others</span>
+            </th>
+            <th style="border-right: 1px solid #cacaca;">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><circle cx="64" cy="64" r="64" fill="#f58e12" opacity="1" data-original="#ee4c68" class=""></circle><path fill="#353944" d="M106.3 99.2V78.7c-1.6-4.1-3.2-4.9-3.2-4.9-2-2.8-22.5-10.3-22.5-10.3l-2 .9-.4 1.4-3.7 12.9h-21l-3.7-12.9-.4-1.4-2-.9S26.9 71 24.9 73.8c0 0-1.6.8-3.2 4.9v20.5z" opacity="1" data-original="#353944" class=""></path><path fill="#f0b97c" d="M76.3 68.8H51.7c2.1-6.4 2.1-13.1 0-19.4h24.6c-2.1 6.3-2.1 13.1 0 19.4z" opacity="1" data-original="#f0b97c" class=""></path><path fill="#fdfeff" d="M60.2 99.2H68l1.8-5.5 2.9-8.8L79 65.8H49.8l8.5 27.3z" opacity="1" data-original="#fdfeff"></path><path fill="#f1592f" d="m70.7 99.2-.8-4.7-.1-.8-1.1-6.9-2.2-13.5h-5l-2.2 13.5-1 6.3-.2 1.4-.8 4.7z" opacity="1" data-original="#f1592f" class=""></path><path fill="#e8e7e8" d="M64 65.8 74.8 60 72 72.2s-2.8-3.3-8-6.4z" opacity="1" data-original="#e8e7e8" class=""></path><path fill="#e34e30" d="m69.6 69.8-3.1 3.5h-5l-3.1-3.5c1.3-1.2 3.2-2.6 5.6-4 2.4 1.4 4.2 2.8 5.6 4z" opacity="1" data-original="#e34e30" class=""></path><path fill="#656d7a" d="m71.8 99.2 9.7-19.5-4.2-1.9 5.1-3.4-1.8-10.9-5.8-3.6-.1.3-1.2 5.6h-.1l-.6 3-.8 3.4-3.3 14.6-2.8 12.4z" opacity="1" data-original="#656d7a" class=""></path><path fill="#e8e7e8" d="M64 65.8 53.2 60 56 72.2s2.8-3.3 8-6.4z" opacity="1" data-original="#e8e7e8" class=""></path><path fill="#656d7a" d="m46.5 79.7 9.7 19.5h5.9l-2.8-12.4L56 72.2l-.8-3.4-.6-3-1.3-5.7-.1-.2-5.8 3.6-1.8 10.9 5.1 3.4z" opacity="1" data-original="#656d7a" class=""></path><ellipse cx="82.2" cy="35.3" fill="#f0b97c" rx="3" ry="6.3" transform="rotate(9.94 82.216 35.357)" opacity="1" data-original="#f0b97c" class=""></ellipse><path fill="#f0b97c" d="M42.4 35.8c.6 3.4 2.4 5.9 4 5.7 1.6-.3 2.4-3.3 1.8-6.7-1.4-8.2-7.2-7.1-5.8 1z" opacity="1" data-original="#f0b97c" class=""></path><path fill="#f7cfa3" d="M82.6 31.4C82.6 47.6 70.5 60 63.7 60 57 60 44.8 47.6 44.8 31.4c0-10.9 8.5-24.9 18.9-24.9 10.5 0 18.9 14 18.9 24.9z" opacity="1" data-original="#f7cfa3" class=""></path><path fill="#353944" d="M81.5 27.7c0 2.1-.4 4.1-1.1 6l2.7-.4c1.4-2.9 2.2-6.1 2.2-9.5 0-2.5-.4-5-1.2-7.2-1.1.8-2.7 1.8-4.7 2.7 1.3 2.5 2.1 5.4 2.1 8.4z" opacity="1" data-original="#353944" class=""></path><path fill="#4d535f" d="M85.8 14.9c0 .3-.6.9-1.8 1.8-1.1.8-2.7 1.8-4.7 2.7-11.4 5.4-25.3 3.2-31-.4-2.6 4.6-3 10.1-1.3 14.8l-2.7-.4C32.9 10.1 65.8-12.5 85.8 14.9z" opacity="1" data-original="#4d535f" class=""></path><path fill="#e8e7e8" d="M105.7 77.2H22.3c-2.2 0-4 1.8-4 4V128h91.4V81.2c0-2.2-1.8-4-4-4z" opacity="1" data-original="#e8e7e8" class=""></path><circle cx="64" cy="102.6" r="7.6" fill="#d2d2d4" opacity="1" data-original="#d2d2d4" class=""></circle></g></svg><br>
+                <span>Freelancers</span>
+            </th>
+        </tr>
+
+        <tr>
+            <td style="border-right: 0; font-weight: bold;">VIRTUAL MEDICAL ASSISTANT</td>
+            <td colspan="3" style="border-left: 0;"></td>
+        </tr>
+
+        <tr>
+            <td>Enhanced Background Checks by
+                Certified 3rd Party Professionals</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+
+        <tr>
+            <td>On-boarding Journey with
+                Five Key Stages</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+
+        <tr>
+            <td>100% Nursing/Allied Medical Graduates</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+                
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>On-call Trained Back-up for Critical Operations</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+                
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>Exclusive Employment: No Temporary
+                or Part-time Hires</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+                
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td style="border-right: 0; font-weight: bold;">YOUR MEDICAL VIRTUAL ASSISTANT CUSTOMER SERVICE TEAM</td>
+            <td colspan="3" style="border-left: 0;"></td>
+        </tr>
+
+        <tr>
+            <td>Account Management Based in the USA
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Daily Reports and Support for
+                Quality Assurance</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Expert Assistance for VMA from
+                Internal Subject Matter Specialists</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Virtual Assistant IT Support</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>14+ Years of Experience in
+                US Medical Services</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 0; font-weight: bold;">HEALTHCARE VIRTUAL ASSISTANT COMMERCIAL AGREEMENT</td>
+            <td colspan="3" style="border-left: 0;"></td>
+        </tr>
+        <tr>
+            <td>Affordable Monthly Cost</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Contract Flexibility</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Easy Payment Process for
+                US-based Company</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Agreement for Business Associates</td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+    </table>
+    <!-- Legend Table -->
+    <table class="b-table" style="max-width: 400px;">
+        <tr>
+            <td style="border-right: 0; font-weight: bold; border-top-left-radius: 10px;">Legend:</td>
+            <td colspan="2" style="border-left: 0; border-top-right-radius: 10px;"></td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td colspan="2">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 507.2 507.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><circle cx="253.6" cy="253.6" r="253.6" style="" fill="#17224d" data-original="#32ba7c" opacity="1" class="hovered-path"></circle><path d="m188.8 368 130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z" style="" fill="#17224f" data-original="#0aa06e" class="" opacity="1"></path><path d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z" style="" fill="#ffffff" data-original="#ffffff" class=""></path><path d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z" style="" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Not Always</td>
+            <td colspan="2">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 475.044 475.044" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M474.487 183.276c-1.711-5.236-6.852-8.52-15.41-9.851l-143.323-20.839L251.52 22.681c-4-7.804-8.661-11.704-13.989-11.704-5.519 0-10.183 3.9-13.988 11.704l-64.241 129.905-143.324 20.839c-8.564 1.332-13.704 4.615-15.415 9.851-1.709 5.236.478 10.898 6.567 16.989l103.924 101.068-24.553 142.749c-.95 6.286-.381 11.173 1.715 14.702 2.092 3.524 5.33 5.283 9.707 5.283 3.237 0 7.043-1.14 11.42-3.433l128.194-67.382 128.19 67.382c4.377 2.286 8.186 3.433 11.423 3.433 4.381 0 7.622-1.759 9.709-5.283 2.088-3.529 2.659-8.416 1.708-14.702l-24.551-142.749 103.63-101.068c6.284-6.091 8.566-11.753 6.841-16.989zm-135.89 91.789-13.99 13.421 3.43 18.843 17.128 101.357-90.786-47.965-16.848-8.856V76.927l45.395 91.933 8.559 17.128 18.85 2.856 101.642 14.844-73.38 71.377z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Not Available</td>
+            <td colspan="2">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#17224d" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </td>
+        </tr>
+    </table>
+
+   </div>
+   
+    
+</body>
+</html>
+
+
+
+
+
